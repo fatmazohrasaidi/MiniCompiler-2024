@@ -12,14 +12,14 @@ This project is a basic compiler built using **Flex** and **Bison** to perform *
 lex lex.l
 This command generates lex.yy.c, the lexical analyzer from lex.l.
 
-2️⃣ **Generate the Parser**
+2️⃣ **Generate the Parser**  
 bison -d synta.y
 This creates synta.tab.c (the parser) and synta.tab.h (the header file).
 
-3️⃣ **Compile Everything**
+3️⃣ **Compile Everything**  
 gcc lex.yy.c synta.tab.c -lfl -ly -o comp.exe
 This compiles the generated files into an executable comp.
 
-4️⃣ **Run the Compiler**
+4️⃣ **Run the Compiler**  
 ./comp.exe < synta1.txt
 This processes synta1.txt as input using the compiled compiler.
