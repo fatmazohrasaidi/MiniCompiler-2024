@@ -1,0 +1,84 @@
+CHARACTER ROUTINE Comp (x,y,z)
+	% Déclarations
+
+	INTEGER A,B; 
+	CHARACTER C*20,G*88; 
+	REAL MAT DIMENSION (20, 200);
+	LOGICAL D;
+
+	INTEGER var DIMENSION (20); 
+	% Instructions
+	D = MAT(5,200)+(B * 5);
+	B = 30/0;
+	D = TRUE;
+
+	WRITE ('Donner la valeur de A :'); 
+	READ (W,A);
+	WRITE ("La Valeur de A est ", A, ".");
+
+	WRITE ("Donner la valeur de T:"); 
+	READ (T);
+	WRITE ("La Valeur de T est ", T, ".");
+
+	A = 0;
+	Comp = A;
+ENDR
+
+INTEGER ROUTINE fonction (val)
+	% Déclarations
+
+ 
+	CHARACTER C*20,G*88; 
+	INTEGER matrice DIMENSION (10,20);
+	LOGICAL verif;
+	REAL x1;
+	INTEGER x1,x2,x3; 
+	INTEGER var4 DIMENSION (20); 
+
+
+	% Instructions
+	WRITE ("Entrer la valeur de x1 :"); 
+	READ (x1);
+	WRITE ("La Valeur de x1 est ", x1, ".");
+	x1 = (x2 * 5)+matrice(5,200);
+	x2= 30/0;
+	G = "L3";
+	verif= FALSE;
+
+
+
+	WRITE ("Entrerla valeur de x3:"); 
+	READ (x3);
+	WRITE ("La Valeur de x3 est ", x3, ".");
+
+	x1 = 0;
+	fonction = x1;
+ENDR
+
+
+PROGRAM HelloAcad
+	% Déclarations
+	INTEGER n,C; 
+	REAL Y ; 
+	INTEGER TAB DIMENSION (10) ; 
+
+	% Instructions
+	DOWHILE (A.LT.10) 
+		A = A + 1;
+	ENDDO
+
+	IF(  (A.GT.Y).OR.(C.EQ.TRUE)  ) THEN 
+		A = A - B ;
+	ELSE 
+		A = A + B;
+	ENDIF
+
+	A = TAB(0) + (B * 7);
+	B = 30;
+	C = 22*10*B;
+
+	A = CALL Comp(A,B,C);
+	EQUIVALENCE (A, B, C),(Y, TAB(3),R(7,56) );
+	C = "L3";
+	D = TRUE;
+END.
